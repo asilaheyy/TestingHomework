@@ -17,7 +17,7 @@ public class UserRepository {
 
     }
 
-    public Optional<User> getUserByUserName(String givenUserName) {
+   /* public Optional<User> getUserByUserName(String givenUserName) {
         boolean userExists = users
                 .stream().anyMatch(u -> u.equals(givenUserName));
         if (userExists) {
@@ -31,6 +31,6 @@ public class UserRepository {
          //как вернуть Optional
 
 
-    }
+    }*/
 }
 

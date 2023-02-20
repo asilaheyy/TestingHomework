@@ -1,46 +1,43 @@
 package org.example.testing;
 
+import org.example.exceptions.EmailException;
+import org.example.exceptions.PasswordException;
+import org.example.exceptions.UserNameException;
+import org.example.exceptions.UserNonUniqueException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class UserTest {
     private User user = new User("asilaheyy", "asila@gmail.com", "1234");
 
 
     @Test
-    @DisplayName("When name is passed to user, then user returns correct name.")
+    @DisplayName("When passed username is null, then username exception is thrown.")
     public void NameNotNullTest() {
-        String actualResult = user.userNameNotNull("asilaheyy");
-        Assertions.assertNotNull(actualResult);
-        assertEquals("asilaheyy", actualResult, "asilaheyy should be returned");
+        assertThrows(UserNameException.class, () -> user.userNameNotNull(""));
 
     }
 
     @Test
-    @DisplayName("When email is passed to user, then user returns correct email.")
+    @DisplayName("When passed email is null, then email exception is thrown.")
     public void emailNotNullTest() {
-        String actualResult = user.emailNotNull("asila@gmail.com");
-        Assertions.assertNotNull(actualResult);
-        assertEquals("asila@gmail.com", actualResult, "asila@gmail.com should be returned");
+        assertThrows(EmailException.class, () -> user.emailNotNull(""));
     }
 
     @Test
-    @DisplayName("When there's correct email with '@' symbol passed to the user,then user returns email.")
+    @DisplayName("When there's  not correct email with '@' symbol passed to the user,then email exception is thrown.")
     public void correctEmailTest() {
-        String actualResult = user.correctEmail("asila@gmail.com");
-        Assertions.assertNotNull(actualResult);
-        assertEquals("asila@gmail.com", actualResult, "asila@gmail.com should be returned");
+        assertThrows(EmailException.class, () -> user.correctEmail("asilagmail.com"));
     }
 
     @Test
-    @DisplayName("When passed password doesnt match email, user returns password.")
+    @DisplayName("When passed password doesnt match email, password exception is thrown.")
     public void passwAndEmailDontMatchTest() {
-        String actualResult = user.emailAndPasswDontMatch("asila@gmail.com", "1234");
-        Assertions.assertNotNull(actualResult);
-        assertEquals("1234", actualResult, "Password matches email. Change password. Should return 1234");
+        assertThrows(PasswordException.class, () -> user.emailAndPasswDontMatch("1234", "1234"));
     }
 
 }
