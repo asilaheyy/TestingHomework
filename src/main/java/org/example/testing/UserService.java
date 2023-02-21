@@ -36,8 +36,8 @@ public class UserService {
     public List<User> getAllUserNames(){
         try {
             Collection<User> users = this.userRepository.getAllUsers();
-            if (users == null){
-                return null;
+            if (users.isEmpty()){
+                return users.stream().toList();
             }
             return users
                     .stream()

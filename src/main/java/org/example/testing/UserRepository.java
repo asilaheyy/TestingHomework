@@ -30,7 +30,8 @@ public class UserRepository {
 
     public Optional<User> getUserByNameAndPassw(String givenUserName, String givenPassw) {
         return users.stream()
-                .filter(u -> u.getUserName().equals(givenUserName) &&
+                .filter(u ->
+                        u.getUserName().equals(givenUserName) &&
                         u.getUserPassw().equals(givenPassw))
                 .findFirst();
 

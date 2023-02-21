@@ -13,6 +13,7 @@ public class User {
 
 
 
+
     public User(String userName, String userEMail, String userPassw) {
         userNameNotNull(userName);
         emailNotNull(userEMail);
@@ -25,9 +26,10 @@ public class User {
     }
 
     public User(){
-        this.userName = "UserName";
-        this.userEMail = "UserEmail";
-        this.userPassw = "UserPassw";
+    this.userName = "UserName";
+    this.userEMail = "Email";
+    this.userPassw = "Password";
+
     }
 
 

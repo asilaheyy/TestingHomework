@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cbd702d-84c1-418a-80af-08238c8a22ff" name="Changes" comment="Домашка по тестам">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1cbd702d-84c1-418a-80af-08238c8a22ff" name="Changes" comment="Новые правки">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/testing/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testing/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/testing/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testing/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/testing/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testing/UserService.java" afterDir="false" />
@@ -20,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -42,7 +42,12 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.UserTest">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.testing" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.UserTest.noArgsConstructorEmailTest">
     <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestingHomework" />
       <extension name="coverage">
@@ -124,9 +129,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserTest" />
         <item itemvalue="JUnit.UserTest.noArgsConstructorEmailTest" />
         <item itemvalue="JUnit.UserTest.noArgsConstructorUserNameTest" />
+        <item itemvalue="JUnit.UserTest" />
         <item itemvalue="JUnit.UserTest.correctEmailNoArgConstructorTest" />
         <item itemvalue="JUnit.UserTest.noargsConstructorPasswordAndEmailDontMatch" />
       </list>
@@ -141,7 +146,7 @@
       <option name="presentableId" value="Default" />
       <updated>1676573015415</updated>
       <workItem from="1676620043067" duration="858000" />
-      <workItem from="1676627042710" duration="10969000" />
+      <workItem from="1676627042710" duration="13213000" />
     </task>
     <task id="LOCAL-00001" summary="Помощь с методами getUserByUserName, getUserByNameAndPassw">
       <created>1676629234979</created>
@@ -157,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676882200215</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Новые правки">
+      <created>1676963350532</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676963350532</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +189,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Помощь с методами getUserByUserName, getUserByNameAndPassw" />
     <MESSAGE value="Домашка по тестам" />
-    <option name="LAST_COMMIT_MESSAGE" value="Домашка по тестам" />
+    <MESSAGE value="Новые правки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Новые правки" />
   </component>
 </project>
