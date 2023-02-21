@@ -3,7 +3,6 @@ package org.example.testing;
 import org.example.exceptions.EmailException;
 import org.example.exceptions.PasswordException;
 import org.example.exceptions.UserNameException;
-import org.example.exceptions.UserNonUniqueException;
 
 import java.util.Objects;
 
@@ -12,47 +11,49 @@ public class User {
     private final String userEMail;
     private final String userPassw;
 
+
+
     public User(String userName, String userEMail, String userPassw) {
+        userNameNotNull(userName);
+        emailNotNull(userEMail);
+        correctEmail(userEMail);
+        emailAndPasswDontMatch(userEMail,userPassw);
         this.userName = userName;
-        if (userName == null || userName.isBlank()) {
-            throw new UserNameException("Empty username");
-        }
         this.userEMail = userEMail;
-        if (userEMail == null || userEMail.isBlank() || !userEMail.contains("@")) {
-            throw new EmailException("Empty email. Email should contain '@'");
-        }
         this.userPassw = userPassw;
-        if (userEMail.equals(userPassw)) {
-            throw new PasswordException("Password should not match email");
-        }
+
     }
 
-    public String userNameNotNull(String passedUserName) {
+    public User(){
+        this.userName = "UserName";
+        this.userEMail = "UserEmail";
+        this.userPassw = "UserPassw";
+    }
+
+
+
+    public void userNameNotNull(String passedUserName) {
         if (passedUserName == null || passedUserName.isBlank()) {
             throw new UserNameException("Empty username");
         }
-        return passedUserName;
     }
 
-    public String emailNotNull(String passedUserEMail) {
+    public void emailNotNull(String passedUserEMail) {
         if (passedUserEMail == null || passedUserEMail.isBlank()) {
             throw new EmailException("Empty email");
         }
-        return passedUserEMail;
     }
 
-    public String correctEmail(String passedEmail) {
+    public void correctEmail(String passedEmail) {
         if (!passedEmail.contains("@")) {
             throw new EmailException("Email should contain '@'");
         }
-        return passedEmail;
     }
 
-    public String emailAndPasswDontMatch(String passedEmail, String passedPassw) {
+    public void emailAndPasswDontMatch(String passedEmail, String passedPassw) {
         if (passedEmail.equals(passedPassw)) {
             throw new PasswordException("Password should not match email");
         }
-        return passedPassw;
     }
 
     public String getUserName() {

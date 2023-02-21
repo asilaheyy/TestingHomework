@@ -2,6 +2,9 @@ package org.example.testing;
 
 import org.example.exceptions.UserNonUniqueException;
 
+import java.util.Collection;
+import java.util.List;
+
 public class UserService {
 
     private final UserRepository userRepository;
@@ -28,5 +31,19 @@ public class UserService {
             throw new UserNonUniqueException("Пользователь уже существует");
         }
         this.userRepository.addUser(user);
+    }
+
+    public List<User> getAllUserNames(){
+        try {
+            Collection<User> users = this.userRepository.getAllUsers();
+            if (users == null){
+                return null;
+            }
+            return users
+                    .stream()
+                    .toList();
+        } catch (RuntimeException e){
+            return null;
+        }
     }
 }

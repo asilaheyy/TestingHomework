@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cbd702d-84c1-418a-80af-08238c8a22ff" name="Changes" comment="Помощь с методами getUserByUserName, getUserByNameAndPassw">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exceptions/EmailException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exceptions/PasswordException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exceptions/UserNameException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exceptions/UserNonUniqueException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/testing/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testing/UserServiceTest.java" afterDir="false" />
+    <list default="true" id="1cbd702d-84c1-418a-80af-08238c8a22ff" name="Changes" comment="Домашка по тестам">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/testing/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testing/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/testing/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testing/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/testing/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testing/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testing/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testing/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,8 +42,8 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.UserTest.passwAndEmailDontMatchTest">
-    <configuration name="UserTest.NameNotNullTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserTest">
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestingHomework" />
       <extension name="coverage">
         <pattern>
@@ -58,13 +53,28 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.testing" />
       <option name="MAIN_CLASS_NAME" value="org.example.testing.UserTest" />
-      <option name="METHOD_NAME" value="NameNotNullTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.correctEmailNoArgConstructorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestingHomework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.testing" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testing.UserTest" />
+      <option name="METHOD_NAME" value="correctEmailNoArgConstructorTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.correctEmailTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.noArgsConstructorEmailTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestingHomework" />
       <extension name="coverage">
         <pattern>
@@ -74,13 +84,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.testing" />
       <option name="MAIN_CLASS_NAME" value="org.example.testing.UserTest" />
-      <option name="METHOD_NAME" value="correctEmailTest" />
+      <option name="METHOD_NAME" value="noArgsConstructorEmailTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.emailNotNullTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.noArgsConstructorUserNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestingHomework" />
       <extension name="coverage">
         <pattern>
@@ -90,13 +100,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.testing" />
       <option name="MAIN_CLASS_NAME" value="org.example.testing.UserTest" />
-      <option name="METHOD_NAME" value="emailNotNullTest" />
+      <option name="METHOD_NAME" value="noArgsConstructorUserNameTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.passwAndEmailDontMatchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.noargsConstructorPasswordAndEmailDontMatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestingHomework" />
       <extension name="coverage">
         <pattern>
@@ -106,7 +116,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.testing" />
       <option name="MAIN_CLASS_NAME" value="org.example.testing.UserTest" />
-      <option name="METHOD_NAME" value="passwAndEmailDontMatchTest" />
+      <option name="METHOD_NAME" value="noargsConstructorPasswordAndEmailDontMatch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,10 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserTest.passwAndEmailDontMatchTest" />
-        <item itemvalue="JUnit.UserTest.correctEmailTest" />
-        <item itemvalue="JUnit.UserTest.emailNotNullTest" />
-        <item itemvalue="JUnit.UserTest.NameNotNullTest" />
+        <item itemvalue="JUnit.UserTest" />
+        <item itemvalue="JUnit.UserTest.noArgsConstructorEmailTest" />
+        <item itemvalue="JUnit.UserTest.noArgsConstructorUserNameTest" />
+        <item itemvalue="JUnit.UserTest.correctEmailNoArgConstructorTest" />
+        <item itemvalue="JUnit.UserTest.noargsConstructorPasswordAndEmailDontMatch" />
       </list>
     </recent_temporary>
   </component>
@@ -130,7 +141,7 @@
       <option name="presentableId" value="Default" />
       <updated>1676573015415</updated>
       <workItem from="1676620043067" duration="858000" />
-      <workItem from="1676627042710" duration="6238000" />
+      <workItem from="1676627042710" duration="10969000" />
     </task>
     <task id="LOCAL-00001" summary="Помощь с методами getUserByUserName, getUserByNameAndPassw">
       <created>1676629234979</created>
@@ -139,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676629234979</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Домашка по тестам">
+      <created>1676882200215</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676882200215</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +176,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Помощь с методами getUserByUserName, getUserByNameAndPassw" />
-    <option name="LAST_COMMIT_MESSAGE" value="Помощь с методами getUserByUserName, getUserByNameAndPassw" />
+    <MESSAGE value="Домашка по тестам" />
+    <option name="LAST_COMMIT_MESSAGE" value="Домашка по тестам" />
   </component>
 </project>

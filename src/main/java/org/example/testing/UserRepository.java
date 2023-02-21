@@ -17,20 +17,25 @@ public class UserRepository {
 
     }
 
-   /* public Optional<User> getUserByUserName(String givenUserName) {
-        boolean userExists = users
-                .stream().anyMatch(u -> u.equals(givenUserName));
-        if (userExists) {
+    public void addNewUser(User newUser) {
+        users.add(new User(newUser.getUserName(), newUser.getUserEMail(), newUser.getUserPassw()));
+    }
+
+    public Optional<User> getUserByUserName(String givenUserName) {
+        return users.stream()
+                .filter(u -> u.getUserName().equals(givenUserName))
+                .findFirst();
+    }
 
 
+    public Optional<User> getUserByNameAndPassw(String givenUserName, String givenPassw) {
+        return users.stream()
+                .filter(u -> u.getUserName().equals(givenUserName) &&
+                        u.getUserPassw().equals(givenPassw))
+                .findFirst();
 
 
-    public Optional<User> getUserByNameAndPassw(String givenUserName,String givenPassw) {
-                userExists = users.stream().anyMatch(u -> u.equals(givenUserName))
-                        & users.stream().anyMatch(u -> u.equals(givenPassw));
-         //как вернуть Optional
-
-
-    }*/
+    }
 }
+
 
