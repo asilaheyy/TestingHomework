@@ -4,11 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cbd702d-84c1-418a-80af-08238c8a22ff" name="Changes" comment="" />
+    <list default="true" id="1cbd702d-84c1-418a-80af-08238c8a22ff" name="Changes" comment="Тест на конструктор без аргументов">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exceptions/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testing/UserRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/testing/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testing/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/testing/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testing/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/testing/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testing/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testing/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testing/UserServiceTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Lpfb6HwOzyrPEDmoh5psFUiOOH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -16,13 +39,107 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.testing" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.UserRepositoryTest.userSearchByNameWhenUserNotFoundTest">
+    <configuration name="UserRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestingHomework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.testing" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testing.UserRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest.EmptyRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestingHomework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.testing" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testing.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="EmptyRepositoryTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest.userSearchByNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestingHomework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.testing" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testing.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="userSearchByNameTest(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest.userSearchByNameWhenUserNotFoundTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestingHomework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.testing" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testing.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="userSearchByNameWhenUserNotFoundTest(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestingHomework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.testing" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testing.UserServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserRepositoryTest.userSearchByNameWhenUserNotFoundTest" />
+        <item itemvalue="JUnit.UserRepositoryTest.EmptyRepositoryTest" />
+        <item itemvalue="JUnit.UserRepositoryTest.userSearchByNameTest" />
+        <item itemvalue="JUnit.UserRepositoryTest" />
+        <item itemvalue="JUnit.UserServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -31,7 +148,59 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676573015415</updated>
+      <workItem from="1676620043067" duration="858000" />
+      <workItem from="1676627042710" duration="26440000" />
     </task>
+    <task id="LOCAL-00001" summary="Помощь с методами getUserByUserName, getUserByNameAndPassw">
+      <created>1676629234979</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676629234979</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Домашка по тестам">
+      <created>1676882200215</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676882200215</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Новые правки">
+      <created>1676963350532</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676963350532</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Тест на конструктор без аргументов">
+      <created>1677007873801</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677007873801</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Помощь с методами getUserByUserName, getUserByNameAndPassw" />
+    <MESSAGE value="Домашка по тестам" />
+    <MESSAGE value="Новые правки" />
+    <MESSAGE value="Тест на конструктор без аргументов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Тест на конструктор без аргументов" />
   </component>
 </project>
