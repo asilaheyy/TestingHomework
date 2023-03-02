@@ -1,6 +1,7 @@
 package org.example.testing;
 
 import org.example.exceptions.UserNonUniqueException;
+import org.example.exceptions.UserNotFoundException;
 
 import java.util.Collection;
 import java.util.List;
@@ -28,7 +29,7 @@ public class UserService {
                 .anyMatch(u -> u.equals(user));
 
         if (userExists) {
-            throw new UserNonUniqueException("Пользователь уже существует");
+            throw new UserNonUniqueException("User already exists");
         }
         this.userRepository.addUser(user);
     }
@@ -46,4 +47,19 @@ public class UserService {
             return null;
         }
     }
+
+    public int getAllUsersCount(){
+        try{
+            Collection<User> users = this.userRepository.getAllUsers();
+            if (users == null){
+                return 0;
+            }
+            return (int) users
+                    .stream()
+                    .count();
+        } catch (UserNotFoundException e){
+            return 0;
+        }
+    }
+
 }

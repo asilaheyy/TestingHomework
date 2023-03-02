@@ -6,6 +6,7 @@ public class UserRepository {
 
     private final List<User> users = new ArrayList<>();
 
+
     public User addUser(User user) {
         this.users.add(user);
         return user;
@@ -13,6 +14,9 @@ public class UserRepository {
 
 
     public Collection<User> getAllUsers() {
+        if (users ==  null || users.isEmpty()){
+            return Collections.emptyList();
+        }
         return Collections.unmodifiableCollection(users);
 
     }

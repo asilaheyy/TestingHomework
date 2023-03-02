@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cbd702d-84c1-418a-80af-08238c8a22ff" name="Changes" comment="Новые правки">
+    <list default="true" id="1cbd702d-84c1-418a-80af-08238c8a22ff" name="Changes" comment="Тест на конструктор без аргументов">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exceptions/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testing/UserRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/testing/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testing/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/testing/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testing/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/testing/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testing/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testing/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testing/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testing/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testing/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -47,8 +51,8 @@
       <recent name="org.example.testing" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.noArgsConstructorEmailTest">
-    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserRepositoryTest.userSearchByNameWhenUserNotFoundTest">
+    <configuration name="UserRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestingHomework" />
       <extension name="coverage">
         <pattern>
@@ -57,13 +61,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.testing" />
-      <option name="MAIN_CLASS_NAME" value="org.example.testing.UserTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testing.UserRepositoryTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.correctEmailNoArgConstructorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRepositoryTest.EmptyRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestingHomework" />
       <extension name="coverage">
         <pattern>
@@ -72,14 +76,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.testing" />
-      <option name="MAIN_CLASS_NAME" value="org.example.testing.UserTest" />
-      <option name="METHOD_NAME" value="correctEmailNoArgConstructorTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testing.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="EmptyRepositoryTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.noArgsConstructorEmailTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRepositoryTest.userSearchByNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestingHomework" />
       <extension name="coverage">
         <pattern>
@@ -88,14 +92,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.testing" />
-      <option name="MAIN_CLASS_NAME" value="org.example.testing.UserTest" />
-      <option name="METHOD_NAME" value="noArgsConstructorEmailTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testing.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="userSearchByNameTest(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.noArgsConstructorUserNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRepositoryTest.userSearchByNameWhenUserNotFoundTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestingHomework" />
       <extension name="coverage">
         <pattern>
@@ -104,14 +108,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.testing" />
-      <option name="MAIN_CLASS_NAME" value="org.example.testing.UserTest" />
-      <option name="METHOD_NAME" value="noArgsConstructorUserNameTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testing.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="userSearchByNameWhenUserNotFoundTest(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.noargsConstructorPasswordAndEmailDontMatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestingHomework" />
       <extension name="coverage">
         <pattern>
@@ -120,20 +124,19 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.testing" />
-      <option name="MAIN_CLASS_NAME" value="org.example.testing.UserTest" />
-      <option name="METHOD_NAME" value="noargsConstructorPasswordAndEmailDontMatch" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testing.UserServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserTest.noArgsConstructorEmailTest" />
-        <item itemvalue="JUnit.UserTest.noArgsConstructorUserNameTest" />
-        <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.UserTest.correctEmailNoArgConstructorTest" />
-        <item itemvalue="JUnit.UserTest.noargsConstructorPasswordAndEmailDontMatch" />
+        <item itemvalue="JUnit.UserRepositoryTest.userSearchByNameWhenUserNotFoundTest" />
+        <item itemvalue="JUnit.UserRepositoryTest.EmptyRepositoryTest" />
+        <item itemvalue="JUnit.UserRepositoryTest.userSearchByNameTest" />
+        <item itemvalue="JUnit.UserRepositoryTest" />
+        <item itemvalue="JUnit.UserServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +149,7 @@
       <option name="presentableId" value="Default" />
       <updated>1676573015415</updated>
       <workItem from="1676620043067" duration="858000" />
-      <workItem from="1676627042710" duration="13213000" />
+      <workItem from="1676627042710" duration="26440000" />
     </task>
     <task id="LOCAL-00001" summary="Помощь с методами getUserByUserName, getUserByNameAndPassw">
       <created>1676629234979</created>
@@ -169,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676963350532</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Тест на конструктор без аргументов">
+      <created>1677007873801</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677007873801</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +200,7 @@
     <MESSAGE value="Помощь с методами getUserByUserName, getUserByNameAndPassw" />
     <MESSAGE value="Домашка по тестам" />
     <MESSAGE value="Новые правки" />
-    <option name="LAST_COMMIT_MESSAGE" value="Новые правки" />
+    <MESSAGE value="Тест на конструктор без аргументов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Тест на конструктор без аргументов" />
   </component>
 </project>
