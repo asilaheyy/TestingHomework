@@ -47,10 +47,16 @@ public class UserRepositoryTest {
     @Test
     @DisplayName("When there is username that matches given user name in repository, then repository returns user.")
     public void userSearchByNameTest() {
+        userRepository.addUser(user1);
+        User user1 = new User("user1", "user1@", "1234");
+        Assertions.assertEquals(userRepository.getUserByUserName("user1"), Optional.of(user1));
+
+
+/*  Предыдущая реализация
         String givenusername = "user1";
         if (userRepository.getAllUsers().contains(givenusername)) {
             userRepository.getUserByUserName(givenusername);
-        }
+        }*/
 
     }
 
@@ -58,11 +64,16 @@ public class UserRepositoryTest {
     @Test
     @DisplayName("When there is username and password in repository that matches given user, then repository returns user.")
     public void userSearchByNameAndPasswordTest() {
-        String givenuserName = "user1";
+        userRepository.addUser(user1);
+        User user1 = new User("user1", "user1@", "1234");
+        Assertions.assertEquals(userRepository.getUserByNameAndPassw("user1", "1234"), Optional.of(user1));
+
+     /* Предыдущая реализация
+      String givenuserName = "user1";
         String givenPassword = "1234";
         if (userRepository.getAllUsers().contains(givenuserName) && userRepository.getAllUsers().contains(givenPassword)) {
             userRepository.getUserByNameAndPassw(givenuserName, givenPassword);
-        }
+        }*/
     }
 
 
@@ -70,29 +81,40 @@ public class UserRepositoryTest {
     @Test
     @DisplayName("When there is not username found  that matches given user name in repository")
     public void userSearchByNameWhenUserNotFoundTest() {
-        String givenUserName = "user";
-        Assertions.assertNotEquals(userRepository.getUserByUserName(givenUserName), userRepository.getAllUsers().contains(givenUserName));
+        userRepository.addUser(user1);
+        User user1 = new User("user1", "user1@", "1234");
+        Assertions.assertNotEquals(userRepository.getUserByUserName("user"), Optional.of(user1));
 
+       /* Предыдущая реализация
+       String givenUserName = "user";
+        Assertions.assertNotEquals(userRepository.getUserByUserName(givenUserName), userRepository.getAllUsers().contains(givenUserName));
+*/
     }
 
 
     @Test
     @DisplayName("When there is not username and user password found in repo that matches given username and password.")
     public void userSearchByNameAndPasswordWhenUserNotFoundTest() {
-        String givenUserName = "user";
-        String givenPassw = "88";
-        Assertions.assertNotEquals(userRepository.getUserByNameAndPassw(givenUserName, givenPassw), userRepository.getAllUsers().contains(givenUserName));
-        Assertions.assertNotEquals(userRepository.getUserByNameAndPassw(givenUserName,givenPassw), userRepository.getAllUsers().contains(givenPassw));
+        userRepository.addUser(user1);
+        User user1 = new User("user2", "user1@", "123");
+        Assertions.assertNotEquals(userRepository.getUserByNameAndPassw("user1", "1234"), Optional.of(user1));
+    }
+
+    @Test
+    @DisplayName("When there's not any match with password but with username test")
+    public void userSearchByNameAndPasswordWhenNameMatchesButPasswordNotTest() {
+        userRepository.addUser(user1);
+        User user1 = new User("user1", "user1@", "123");
+        Assertions.assertNotEquals(userRepository.getUserByNameAndPassw("user1", "1234"), Optional.of(user1));
 
     }
 
     @Test
-    @DisplayName("..")
-    public void userSearchByNameAndPasswordWhenNameMatchesButPasswordNotTest(){
-
-        User user1 = new User("user1", "user1@", "1234");
-        Assertions.assertEquals(userRepository.getUserByNameAndPassw("user1", "1234"), userRepository.getAllUsers().contains("user1"));
-        Assertions.assertNotEquals(userRepository.getUserByNameAndPassw("user1","555"), userRepository.getAllUsers().contains("555"));
+    @DisplayName("When there's not any match with username but with password test")
+    public void userSearchByNameAndPasswordWhenPasswordMatchesButUsernameNotTest() {
+        userRepository.addUser(user1);
+        User user1 = new User("user1", "user1@", "123");
+        Assertions.assertNotEquals(userRepository.getUserByNameAndPassw("user", "1234"), Optional.of(user1));
 
 
     }

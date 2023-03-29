@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cbd702d-84c1-418a-80af-08238c8a22ff" name="Changes" comment="Помощь в классе UserRepositoryTest с поиском пользователя по логину">
+    <list default="true" id="1cbd702d-84c1-418a-80af-08238c8a22ff" name="Changes" comment="Помощь с тестом на поиск пользователя по логину в случае, если такого нет.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testing/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testing/UserRepositoryTest.java" afterDir="false" />
     </list>
@@ -45,7 +45,7 @@
       <recent name="org.example.testing" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserRepositoryTest.userSearchByNameAndPasswordWhenNameMatchesButPasswordNotTest">
+  <component name="RunManager" selected="JUnit.UserRepositoryTest.userSearchByNameTest">
     <configuration name="UserRepositoryTest.userSearchByNameAndPasswordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestingHomework" />
       <extension name="coverage">
@@ -78,7 +78,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRepositoryTest.userSearchByNameAndPasswordWhenUserNotFoundTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRepositoryTest.userSearchByNameAndPasswordWhenPasswordMatchesButUsernameNotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestingHomework" />
       <extension name="coverage">
         <pattern>
@@ -88,13 +88,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.testing" />
       <option name="MAIN_CLASS_NAME" value="org.example.testing.UserRepositoryTest" />
-      <option name="METHOD_NAME" value="userSearchByNameAndPasswordWhenUserNotFoundTest" />
+      <option name="METHOD_NAME" value="userSearchByNameAndPasswordWhenPasswordMatchesButUsernameNotTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRepositoryTest.userSearchByNameTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRepositoryTest.userSearchByNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestingHomework" />
       <extension name="coverage">
         <pattern>
@@ -128,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserRepositoryTest.userSearchByNameAndPasswordWhenNameMatchesButPasswordNotTest" />
-        <item itemvalue="JUnit.UserRepositoryTest.userSearchByNameAndPasswordWhenUserNotFoundTest" />
-        <item itemvalue="JUnit.UserRepositoryTest.userSearchByNameWhenUserNotFoundTest (1)" />
+        <item itemvalue="JUnit.UserRepositoryTest.userSearchByNameTest" />
         <item itemvalue="JUnit.UserRepositoryTest.userSearchByNameAndPasswordTest" />
-        <item itemvalue="JUnit.UserRepositoryTest.userSearchByNameTest (1)" />
+        <item itemvalue="JUnit.UserRepositoryTest.userSearchByNameWhenUserNotFoundTest (1)" />
+        <item itemvalue="JUnit.UserRepositoryTest.userSearchByNameAndPasswordWhenPasswordMatchesButUsernameNotTest" />
+        <item itemvalue="JUnit.UserRepositoryTest.userSearchByNameAndPasswordWhenNameMatchesButPasswordNotTest" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +147,8 @@
       <workItem from="1676620043067" duration="858000" />
       <workItem from="1676627042710" duration="27605000" />
       <workItem from="1678349193421" duration="3676000" />
-      <workItem from="1680013248833" duration="12824000" />
+      <workItem from="1680013248833" duration="13360000" />
+      <workItem from="1680117552805" duration="999000" />
     </task>
     <task id="LOCAL-00001" summary="Помощь с методами getUserByUserName, getUserByNameAndPassw">
       <created>1676629234979</created>
@@ -191,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680017305176</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Помощь с тестом на поиск пользователя по логину в случае, если такого нет.">
+      <created>1680078121196</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680078121196</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +223,7 @@
     <MESSAGE value="Тест на конструктор без аргументов" />
     <MESSAGE value="Помощь в классе UserRepositoryTest" />
     <MESSAGE value="Помощь в классе UserRepositoryTest с поиском пользователя по логину" />
-    <option name="LAST_COMMIT_MESSAGE" value="Помощь в классе UserRepositoryTest с поиском пользователя по логину" />
+    <MESSAGE value="Помощь с тестом на поиск пользователя по логину в случае, если такого нет." />
+    <option name="LAST_COMMIT_MESSAGE" value="Помощь с тестом на поиск пользователя по логину в случае, если такого нет." />
   </component>
 </project>
